@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div id="header" *ngIf="!hideHeader">
+    <div class="container">
+
+      <h2 class="bounce"><a routerLink="/">Book Finder <i class="fas fa-search"></i></a></h2>
+      <p class="animated fadeInUp delay-1s">Find books with just one search</p>
+
+      <app-top-search></app-top-search>
+
+    </div>
+  </div>
+
+  <button class="min-header" (click)="hideShow()"
+  data-toggle="tooltip" data-placement="bottom" title="Hide Top Header">
+    <i class="fas fa-minus"></i>
+  </button>
+
+</div>
